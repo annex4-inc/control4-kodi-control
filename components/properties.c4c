@@ -16,18 +16,6 @@
     "readonly": true
   },
   {
-    "name": "Server Version",
-    "type": "STRING",
-    "default": "",
-    "readonly": true
-  },
-  {
-    "name": "Authentication Status",
-    "type": "STRING",
-    "default": "",
-    "readonly": true
-  },
-  {
     "name": "Debug Mode",
     "type": "LIST",
     "items": [

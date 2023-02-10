@@ -32,25 +32,9 @@
 
 #include utility/wol.lua #endinclude
 
-#include security/authentication.lua #endinclude
-
-#include api/annex4.lua #endinclude
-
--- Create authentication instance
-local g_authentication = Authentication(nil, "kodi_control_ip_annex4.c4z")
-
--- Set the Annex4 API filename
-Annex4.SetFilename("kodi_control_ip_annex4.c4z")
-
--- Notify every proxy that they require authentication to invoke commands
-Proxy.RequiresAuthentication(true)
-
 local VERSION = "Driver Version"
 local MAC = "MAC Address"
 local IP  = "IP Address"
-
-Annex4.IgnoreProperty(IP)
-Annex4.IgnoreProperty(MAC)
 
 local ID_REMOTE  = 5001
 local ID_NETWORK = 6001
