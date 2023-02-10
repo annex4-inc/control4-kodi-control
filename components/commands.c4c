@@ -42,5 +42,37 @@
     ],
     "name": "Play Favourite",
     "description": "Play Favourite - PARAM1"
+  },
+  {
+    "name": "Player Open",
+    "description": "Player Open - PARAM1",
+    "params": [
+      {
+        "name": "URL",
+        "type": "STRING",
+        "default": "",
+        "readonly": false,
+        "items": []
+      }
+    ]
+  },
+  {
+    "name": "Playlist - Clear",
+    "description": "Clear playlist",
+    "params": [
+      {
+        "name": "PlaylistID",
+        "type": "RANGED_INTEGER",
+        "default": 1,
+        "readonly": false,
+        "minimum": 0,
+        "maximum": 1000
+      }
+    ]
+  },
+  {
+    "name": "System - Reboot",
+    "description": "Reboot NAME",
+    "params": []
   }
 ]

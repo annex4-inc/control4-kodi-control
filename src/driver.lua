@@ -18,6 +18,15 @@ Driver = (function()
         end,
         ["Play Favourite"] = function(tParams)
             class.kodi:playFavourite(tParams.Title)
+        end,
+        ["Player Open"] = function(tParams)
+            class.kodi:playerOpen({ file = tParams.URL })
+        end,
+        ["Playlist - Clear"] = function(tParams)
+            class.kodi:jsonRPCRequest(nil, "Playlist.Clear", { playlistId = tonumber(tParams.PlaylistID) })
+        end,
+        ["System - Reboot"]  = function(tParams)
+            class.kodi:jsonRPCRequest(nil, "System.Reboot")
         end
     }
 
@@ -53,6 +62,9 @@ Driver = (function()
 
         class.kodi = Kodi(ip and ip ~= "" and ip or "127.0.0.1", 9090, ID_NETWORK)
         class.kodi:connect()
+
+        -- Create variables
+        C4:AddVariable("CURRENT_TITLE", "", "STRING", true)
     end
 
     Hooks.Register(class, "Driver")

@@ -71,6 +71,8 @@ Kodi = (function(baseClass)
         ['System.OnRestart'] = 'onRestart',
         ['System.OnWake'] = 'onWake',
         ['System.OnSleep'] = 'onSleep',
+
+        ['Other.PlaybackStopped'] = 'onPlaybackStop'
     }
 
     function class:onScreensaverActivated()
@@ -104,6 +106,16 @@ Kodi = (function(baseClass)
 
         C4:FireEvent("On Player Play")
 
+        -- Response.data.item (One of several types, 'title' common across all)
+        -- Response.data.player
+
+        -- Update variable information
+        if (response and response.data and response.data.item.title) then
+            C4:SetVariable("CURRENT_TITLE", response.data.item.title)
+        else
+            C4:SetVariable("CURRENT_TITLE", "")
+        end
+
         Driver.remote:notifyPlay()
     end
 
@@ -113,6 +125,10 @@ Kodi = (function(baseClass)
         C4:FireEvent("On Player Pause")
 
         Driver.remote:notifyPause()
+    end
+
+    function class:onPlaybackStop(response)
+        C4:SetVariable("CURRENT_TITLE", "")
     end
 
     function class:onPlaylistAdd(response)
