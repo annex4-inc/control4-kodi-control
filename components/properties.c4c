@@ -37,12 +37,6 @@
     "readonly": false
   },
   {
-    "name": "IP Address",
-    "type": "STRING",
-    "default": "",
-    "readonly": true
-  },
-  {
     "name": "Button - Red",
     "type": "LIST",
     "items": [

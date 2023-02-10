@@ -1,5 +1,4 @@
 local VERSION = "Driver Version"
-local IP  = "IP Address"
 
 local ID_REMOTE  = 5001
 local ID_NETWORK = 6001
@@ -30,16 +29,6 @@ Driver = (function()
         end
     }
 
-    function class.OnNetworkBindingChanged(idBinding, bIsBound)
-        if (idBinding == ID_NETWORK) then
-            if (bIsBound) then
-                local ip = C4:GetBindingAddress(idBinding)
-
-                class.kodi.tcpConnection:updateAddress(ip)
-            end
-        end
-    end
-
     function class.ExecuteCommand(strCommand, tParams)
         Logger.Trace("Driver.ExecuteCommand")
         Logger.Debug(strCommand, tParams)
@@ -63,7 +52,7 @@ Driver = (function()
         class.kodi = Kodi(ip and ip ~= "" and ip or "127.0.0.1", 9090, ID_NETWORK)
         class.kodi:connect()
 
-        -- Create variables
+        -- Create variables here
         C4:AddVariable("CURRENT_TITLE", "", "STRING", true)
     end
 
