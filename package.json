@@ -1,0 +1,60 @@
+{
+  "name": "kodi_control_ip_annex4",
+  "description": "",
+  "version": "0.0.38",
+  "main": "src/driver.lua",
+  "scripts": {
+    "test": "wsl busted tests/test.lua"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[GIT_USER]/my_package.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/[GIT_USER]/my_package/issues"
+  },
+  "homepage": "https://github.com/[GIT_USER]/my_package",
+  "control4": {
+    "name": "Kodi",
+    "model": "Krypton+",
+    "manufacturer": "XBMC Foundation",
+    "created": "2/10/2023, 7:07:25 PM",
+    "icon": {
+      "image_source": "c4z",
+      "small": "images\\device_sm.png",
+      "large": "images\\device_sm.png"
+    },
+    "control": "lua_gen",
+    "controlmethod": "ip",
+    "creator": "annex4",
+    "capabilities": {
+      "has_discrete_channel_select": true,
+      "can_be_dvr": true,
+      "navigator_display_option": [
+        {
+          "proxybindingid": 5001,
+          "display_icons": [
+            {
+              "height": 300,
+              "width": 300,
+              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_300.png"
+            },
+            {
+              "height": 90,
+              "width": 90,
+              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_90.png"
+            },
+            {
+              "height": 70,
+              "width": 70,
+              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_70.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "connectionname": "Kodi",
+    "type": 2,
+    "consumer": false,
+    "facing": 6,
+    "id": 5001,
+    "classes": [
+      {
+        "classname": "SATELLITE"
+      }
+    ]
+  },
+  {
+    "connectionname": "OUTPUT",
+    "proxybindingid": 5001,
+    "type": 6,
+    "audiosource": true,
+    "videosource": false,
+    "consumer": false,
+    "facing": 6,
+    "id": 4001,
+    "classes": [
+      {
+        "classname": "STEREO"
+      },
+      {
+        "classname": "DIGITAL_OPTICAL"
+      },
+      {
+        "classname": "DIGITAL_COAX"
+      }
+    ]
+  },
+  {
+    "connectionname": "OUTPUT",
+    "proxybindingid": 5001,
+    "type": 5,
+    "audiosource": false,
+    "videosource": true,
+    "consumer": false,
+    "facing": 6,
+    "id": 2001,
+    "classes": [
+      {
+        "classname": "COMPOSITE"
+      },
+      {
+        "classname": "SVIDEO"
+      },
+      {
+        "classname": "COMPONENT"
+      },
+      {
+        "classname": "HDMI"
+      },
+      {
+        "classname": "VGA"
+      }
+    ]
+  },
+  {
+    "connectionname": "WebSocket Connection",
+    "type": 4,
+    "consumer": true,
+    "facing": 6,
+    "id": 6001,
+    "classes": [
+      {
+        "classname": "TCP",
+        "ports": [
+          {
+            "number": 9090,
+            "monitor_connection": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "connectionname": "Audio End-Point",
+    "proxybindingid": 5001,
+    "type": 7,
+    "consumer": false,
+    "id": 7001,
+    "classes": [
+      {
+        "autobind": false,
+        "classname": "AUDIO_SELECTION"
+      },
+      {
+        "autobind": false,
+        "classname": "AUDIO_VOLUME"
+      }
+    ]
+  }
+]

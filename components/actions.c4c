@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Update Now",
+    "command": "UPDATE"
+  },
+  {
+    "name": "Get Best License",
+    "command": "GET_BEST_LICENSE"
+  }
+]

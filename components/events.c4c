@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Screensaver Activated",
+    "description": "The screensaver has been activated"
+  },
+  {
+    "id": 2,
+    "name": "Screensaver Deactivated",
+    "description": "The screensaver has been deactivated"
+  },
+  {
+    "id": 3,
+    "name": "Favourites Updated",
+    "description": "The favourites have been updated"
+  },
+  {
+    "id": 4,
+    "name": "On Player Play",
+    "description": "The player has started rendering media"
+  },
+  {
+    "id": 5,
+    "name": "On Player Stop",
+    "description": "The player has stopped rendering media"
+  },
+  {
+    "id": 6,
+    "name": "On Player Pause",
+    "description": "The player has been paused"
+  },
+  {
+    "id": 7,
+    "name": "On Playlist Add",
+    "description": "The player has been paused"
+  },
+  {
+    "id": 8,
+    "name": "On Playlist Remove",
+    "description": "The player has been paused"
+  },
+  {
+    "id": 9,
+    "name": "On Playlist Clear",
+    "description": "The player has been paused"
+  }
+]

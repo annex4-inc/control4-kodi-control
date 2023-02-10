@@ -1,0 +1,10 @@
+[
+  {
+    "image_source": "c4z",
+    "large_image": "images/device_lg.png",
+    "small_image": "images/device_sm.png",
+    "name": "Kodi",
+    "primary": true,
+    "proxy": "cable"
+  }
+]

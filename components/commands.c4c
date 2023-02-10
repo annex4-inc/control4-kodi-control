@@ -1,0 +1,46 @@
+[
+  {
+    "params": [
+      {
+        "name": "Title",
+        "type": "STRING",
+        "default": ""
+      },
+      {
+        "name": "Message",
+        "type": "STRING",
+        "default": ""
+      },
+      {
+        "name": "Image",
+        "type": "LIST",
+        "items": [
+          "info",
+          "warning",
+          "error"
+        ],
+        "default": "info"
+      },
+      {
+        "name": "Duration",
+        "type": "RANGED_INTEGER",
+        "default": "5000",
+        "maximum": 60000,
+        "minimum": 1000
+      }
+    ],
+    "name": "NOTIFICATION",
+    "description": "Display Notification - PARAM1 - PARAM2 for PARAM4 milliseconds"
+  },
+  {
+    "params": [
+      {
+        "name": "Title",
+        "type": "STRING",
+        "default": ""
+      }
+    ],
+    "name": "Play Favourite",
+    "description": "Play Favourite - PARAM1"
+  }
+]

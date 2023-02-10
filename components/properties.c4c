@@ -1,0 +1,342 @@
+[
+  {
+    "name": "Auto Update",
+    "type": "LIST",
+    "items": [
+      "On",
+      "Off"
+    ],
+    "default": "Off",
+    "readonly": false
+  },
+  {
+    "name": "Driver Version",
+    "type": "STRING",
+    "default": "",
+    "readonly": true
+  },
+  {
+    "name": "Server Version",
+    "type": "STRING",
+    "default": "",
+    "readonly": true
+  },
+  {
+    "name": "Authentication Status",
+    "type": "STRING",
+    "default": "",
+    "readonly": true
+  },
+  {
+    "name": "Debug Mode",
+    "type": "LIST",
+    "items": [
+      "Off",
+      "Debug",
+      "Trace",
+      "Info",
+      "Warning",
+      "Error",
+      "Fatal"
+    ],
+    "default": "Off",
+    "readonly": false
+  },
+  {
+    "name": "MAC Address",
+    "type": "STRING",
+    "default": "",
+    "readonly": false
+  },
+  {
+    "name": "IP Address",
+    "type": "STRING",
+    "default": "",
+    "readonly": true
+  },
+  {
+    "name": "Button - Red",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Red",
+    "readonly": false
+  },
+  {
+    "name": "Button - Green",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Green",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Green",
+    "readonly": false
+  },
+  {
+    "name": "Button - Yellow",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Yellow",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Yellow",
+    "readonly": false
+  },
+  {
+    "name": "Button - Blue",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Blue",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Blue",
+    "readonly": false
+  },
+  {
+    "name": "Button - Menu",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Screenshot",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Context Menu",
+    "readonly": false
+  },
+  {
+    "name": "Button - Guide",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Go Home",
+    "readonly": false
+  },
+  {
+    "name": "Button - DVR",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "No Operation",
+    "readonly": false
+  },
+  {
+    "name": "Button - Pound",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "On Screen Display",
+    "readonly": false
+  },
+  {
+    "name": "Button - Star",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "Toggle Subtitles",
+    "readonly": false
+  },
+  {
+    "name": "Button - Custom 1",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "No Operation",
+    "readonly": false
+  },
+  {
+    "name": "Button - Custom 2",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "No Operation",
+    "readonly": false
+  },
+  {
+    "name": "Button - Custom 3",
+    "type": "LIST",
+    "items": [
+      "Fullscreen",
+      "On Screen Display",
+      "Toggle Subtitles",
+      "Menu",
+      "Context Menu",
+      "Screenshot",
+      "Go Home",
+      "Go Favourites",
+      "No Operation",
+      "Next Subtitle",
+      "Cycle Subtitle",
+      "Subtitle Delay +",
+      "Subtitle Delay -",
+      "Next Language"
+    ],
+    "default": "No Operation",
+    "readonly": false
+  }
+]
