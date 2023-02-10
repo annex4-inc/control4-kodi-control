@@ -58,6 +58,7 @@
     }
   },
   "dependencies": {
+    "@annex4/bithelper": "^1.0.0",
     "@annex4/httpconnection": "^1.0.1",
     "@annex4/proxy.cable": "^1.0.0",
     "@annex4/websocket": "^1.0.6",

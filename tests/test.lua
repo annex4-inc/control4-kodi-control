@@ -1,3 +1,5 @@
+require('bit')
+
 -- Include NPM dependencies
 dofile('tests/generated.lua')
 

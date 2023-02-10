@@ -3,3 +3,4 @@ node_modules/
 output/
 environment.json
 package-lock.json
+tests/generated.lua
