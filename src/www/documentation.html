@@ -1,0 +1,41 @@
+<h1>Kodi</h1>
+
+<h2>Description</h2>
+<p>This driver enables control over Kodi. The driver provides various programming events, button bindings, commands, and
+    a full mapping of control inputs. Communication to Kodi is over a Websocket and HTTP connection.</p>
+
+<h2>Features</h2>
+<ul>
+    <li>Supports various programming events for screensaver, transport control, and playlist changes</li>
+    <li>Supports Websocket and HTTP communication</li>
+    <li>Supports button remapping for buttons that don't have a logical default control</li>
+    <li>Supports 2 useful device commands, 1 to display a notification and another to play a favorited movie by title
+    </li>
+</ul>
+
+<h2>Driver Installation</h2>
+<ol>
+    <li>Place the driver into the project</li>
+    <li>Set the IP address in the network tab</li>
+    <li>Bind audio and/or video connections</li>
+    <li>Refresh navigators</li>
+</ol>
+
+<h2>Kodi Installation</h2>
+<ol>
+    <li>Go to Settings</li>
+    <li>Go to Services</li>
+    <li>Set the access level (bottom left) to at least 'Standard'</li>
+    <li>Select Control</li>
+    <li>Enable 'Allow remote control via HTTP'</li>
+    <li>Set port to '8080'</li>
+    <li>Verify no password is set</li>
+    <li>Enable 'Allow remote control from applications on this system'</li>
+    <li>Enable 'Allow remote control from applications on other systems'</li>
+</ol>
+
+<h2>Workarounds</h2>
+<p>
+    This driver manages a Websocket and HTTP connection to your Kodi device as there is a known issue in Kodi that causes a connection to block when a dialog window opens.
+    When the issue occurs, the driver will detect the blocked connection and finish the dialog window interaction with the other connection. In terms of functionality you won't notice anything
+</p>
