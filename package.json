@@ -56,5 +56,11 @@
         }
       ]
     }
+  },
+  "dependencies": {
+    "@annex4/httpconnection": "^1.0.1",
+    "@annex4/proxy.cable": "^1.0.0",
+    "@annex4/websocket": "^1.0.6",
+    "@annex4/wol": "^1.0.0"
   }
 }
