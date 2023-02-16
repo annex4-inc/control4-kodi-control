@@ -56,6 +56,7 @@ Kodi = (function(baseClass)
         ['Player.OnPause'] = 'onPlayerPause',
         ['Player.OnSeek']  = 'onPlayerSeek',
         ['Player.OnSpeedChanged'] = 'onSpeedChanged',
+        ['Player.OnAVChange'] = 'onAVChange',
 
         ['Playlist.OnAdd']    = 'onPlaylistAdd',
         ['Playlist.OnClear']  = 'onPlaylistClear',
@@ -97,8 +98,27 @@ Kodi = (function(baseClass)
         Logger.Trace("Kodi.onPlayerStop")
 
         C4:FireEvent("On Player Stop")
+        C4:SetVariable("CURRENT_TITLE", "")
 
         Driver.remote:notifyStop()
+    end
+
+    function class:onAVChange(response)
+        Logger.Info(response)
+        -- Get player ID
+        local id = response and response.data and response.data.player and response.data.player.playerid
+
+        if (not id) then
+            id = 0
+        end
+
+        self:jsonRPCRequest(nil, "Player.GetItem", { playerid = id }, function (_, getItemResponse)
+            local label = getItemResponse and getItemResponse.item and getItemResponse.item.label
+
+            if (label and label ~= "") then
+                C4:SetVariable("CURRENT_TITLE", label)
+            end
+        end)
     end
 
     function class:onPlayerPlay(response)
