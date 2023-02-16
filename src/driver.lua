@@ -22,7 +22,7 @@ Driver = (function()
             class.kodi:playerOpen({ file = tParams.URL })
         end,
         ["Playlist - Clear"] = function(tParams)
-            class.kodi:jsonRPCRequest(nil, "Playlist.Clear", { playlistId = tonumber(tParams.PlaylistID) })
+            class.kodi:jsonRPCRequest(nil, "Playlist.Clear", { playlistid = tonumber(tParams.PlaylistID) })
         end,
         ["System - Reboot"]  = function(tParams)
             class.kodi:jsonRPCRequest(nil, "System.Reboot")
