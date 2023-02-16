@@ -227,7 +227,7 @@ Kodi = (function(baseClass)
                 for _, f in ipairs(res.favourites)  do
                     if (f.title == name) then
                         self:jsonRPCRequest(nil, "Playlist.Clear", {
-                            playlistId = 0
+                            playlistid = 0
                         })
 
                         self:jsonRPCRequest(nil, "Playlist.Add", {
