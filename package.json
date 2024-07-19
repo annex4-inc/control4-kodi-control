@@ -1,7 +1,7 @@
 {
   "name": "kodi_control_ip_annex4",
   "description": "",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "src/driver.lua",
   "scripts": {
     "test": "wsl busted tests/test.lua"
@@ -36,23 +36,25 @@
       "navigator_display_option": [
         {
           "proxybindingid": 5001,
-          "display_icons": [
-            {
-              "height": 300,
-              "width": 300,
-              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_300.png"
-            },
-            {
-              "height": 90,
-              "width": 90,
-              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_90.png"
-            },
-            {
-              "height": 70,
-              "width": 70,
-              "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_70.png"
-            }
-          ]
+          "display_icons": {
+            "defaults": [
+              {
+                "height": 300,
+                "width": 300,
+                "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_300.png"
+              },
+              {
+                "height": 90,
+                "width": 90,
+                "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_90.png"
+              },
+              {
+                "height": 70,
+                "width": 70,
+                "path": "controller://driver/kodi_control_ip_annex4/icons/kodi_70.png"
+              }
+            ]
+          }
         }
       ]
     }

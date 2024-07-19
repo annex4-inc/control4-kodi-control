@@ -33,7 +33,7 @@ Driver = (function()
         Logger.Trace("Driver.ExecuteCommand")
         Logger.Debug(strCommand, tParams)
 
-        if (not class.kodi) then
+        if (not class.kodi) then 
             return
         end
 

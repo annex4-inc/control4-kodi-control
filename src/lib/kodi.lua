@@ -57,6 +57,7 @@ Kodi = (function(baseClass)
         ['Player.OnSeek']  = 'onPlayerSeek',
         ['Player.OnSpeedChanged'] = 'onSpeedChanged',
         ['Player.OnAVChange'] = 'onAVChange',
+        ['Player.OnResume'] = 'onPlayerResume',
 
         ['Playlist.OnAdd']    = 'onPlaylistAdd',
         ['Playlist.OnClear']  = 'onPlaylistClear',
@@ -137,6 +138,18 @@ Kodi = (function(baseClass)
         end
 
         Driver.remote:notifyPlay()
+    end
+
+    function class:onPlayerResume(response)
+        Logger.Trace("Kodi.onPlayerResume")
+
+        C4:FireEvent("On Player Resume")
+
+        if (response and response.data and response.data.item.title) then
+            C4:SetVariable("CURRENT_TITLE", response.data.item.title)
+        else
+            C4:SetVariable("CURRENT_TITLE", "")
+        end
     end
 
     function class:onPlayerPause(response)

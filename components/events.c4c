@@ -43,5 +43,10 @@
     "id": 9,
     "name": "On Playlist Clear",
     "description": "The player has been paused"
+  },
+  {
+    "id": 10,
+    "name": "On Player Resume",
+    "description": "Playback of a media item has been resumed"
   }
 ]
